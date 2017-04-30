@@ -127,7 +127,7 @@
     server or client. Handler will be invoked at most once. Useful for clean-up.
 
     Callback status argument:
-      :server-close   : Channel closed by sever
+      :server-close   : Channel closed by server
       :client-close   : HTTP channel closed by client
       :normal         : WebSocket closed by client (CLOSE_NORMAL)
       :going-away     : WebSocket closed by client (CLOSE_GOING_AWAY)
