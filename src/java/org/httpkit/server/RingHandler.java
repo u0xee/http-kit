@@ -46,7 +46,7 @@ class ClojureRing {
     static final Keyword CHARACTER_ENCODING = intern("character-encoding");
     static final Keyword BODY = intern("body");
     static final Keyword WEBSOCKET = intern("websocket?");
-    static final Keyword ASYC_CHANNEL = intern("async-channel");
+    static final Keyword ASYNC_CHANNEL = intern("async-channel");
 
     static final Keyword HTTP = intern("http");
 
@@ -72,7 +72,7 @@ class ClojureRing {
         m.put(URI, req.uri);
         m.put(QUERY_STRING, req.queryString);
         m.put(SCHEME, HTTP); // only http is supported
-        m.put(ASYC_CHANNEL, req.channel);
+        m.put(ASYNC_CHANNEL, req.channel);
         m.put(WEBSOCKET, req.isWebSocket);
         m.put(REQUEST_METHOD, req.method.KEY);
 
