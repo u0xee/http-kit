@@ -115,8 +115,8 @@
     after the first.
 
     For WebSocket, a text frame is sent to client if data is String,
-    a binary frame when data is byte[] or InputStream. For for HTTP streaming
-    responses, data can be one of the type defined by Ring spec")
+    a binary frame when data is byte[] or InputStream. For HTTP streaming
+    responses, data can be one of the types defined by Ring spec")
   (on-receive [ch callback]
     "Sets handler (fn [message]) for notification of client WebSocket
     messages. Message ordering is guaranteed by server.
